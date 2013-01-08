@@ -8,11 +8,22 @@
     </processings>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-mbot:DetailsPage">
-      <processings xsi:type="eef-mbot:Wizard" referenceableObject="//@sequences.0/@processings.1">
-        <processings xsi:type="eef-test_1:Add" name="table compo sample" documentation="" referenceableObject="//@sequences.0/@processings.1">
-          <propertiesEditionElement href="../../../../plugin/org.eclipse.emf.eef.tests.nonreg.edit/models/eefnr.components#_Fx_LAwwvEd-uP4lw9e0IMw"/>
-          <type href="../../../../plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//TableCompositionEditorSample"/>
-          <eContainingFeature xsi:type="ecore:EReference" href="../../../../plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//Root/samples"/>
+      <processings xsi:type="eef-test_1:Add" name="table compo sample" documentation="" referenceableObject="//@sequences.0/@processings.1">
+        <type href="../../../../plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//TableCompositionEditorSample"/>
+        <eContainingFeature xsi:type="ecore:EReference" href="../../../../plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//Root/samples"/>
+      </processings>
+      <processings xsi:type="eef-mbot:Wizard" referenceableObject="//@sequences.0/@processings.3/@processings.0">
+        <processings xsi:type="eef-mbot:Wizard">
+          <processings xsi:type="eef-test_1:Add" name="sample" referenceableObject="//@sequences.0/@processings.3/@processings.0">
+            <propertiesEditionElement href="../../../../plugin/org.eclipse.emf.eef.tests.nonreg.edit/models/eefnr.components#_Fx_LNgwvEd-uP4lw9e0IMw"/>
+            <type href="../../../../plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//Sample"/>
+            <eContainingFeature xsi:type="ecore:EReference" href="../../../../plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//TableCompositionEditorSample/tablecompositionRequiredProperty"/>
+          </processings>
+          <processings xsi:type="eef-test_1:SetAttribute" name="text required property" referenceableObject="//@sequences.0/@processings.3/@processings.1/@processings.0/@processings.0">
+            <propertiesEditionElement href="../../../../plugin/org.eclipse.emf.eef.tests.nonreg.edit/models/eefnr.components#_CDVckQ_gEd-fwJDNg0onkA"/>
+            <values>sample</values>
+            <eContainingFeature xsi:type="ecore:EAttribute" href="../../../../plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//Sample/textRequiredProperty"/>
+          </processings>
         </processings>
       </processings>
       <processings xsi:type="eef-test:Save"/>

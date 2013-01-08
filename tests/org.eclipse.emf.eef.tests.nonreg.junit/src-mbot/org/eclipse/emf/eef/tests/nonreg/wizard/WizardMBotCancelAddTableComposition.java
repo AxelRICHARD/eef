@@ -16,7 +16,7 @@ package org.eclipse.emf.eef.tests.nonreg.wizard;
 public class WizardMBotCancelAddTableComposition extends org.eclipse.emf.eef.modelingBot.testcase.AbstractComposedModelingBotTestCase {
 
 	public void testModelingBot() throws Exception {
-		bot.runModelingBot("org.eclipse.emf.eef.tests.nonreg.junit/models/wizard_nonreg/addTableComposition.modelingbot");
+		bot.runModelingBot("org.eclipse.emf.eef.tests.nonreg.junit/models/wizard_nonreg/cancelAddTableComposition.modelingbot");
 	}
 
 }

@@ -32,7 +32,6 @@ import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 import org.eclipse.emf.edit.command.AddCommand;
 import org.eclipse.emf.edit.command.RemoveCommand;
 import org.eclipse.emf.edit.command.SetCommand;
@@ -399,10 +398,9 @@ public class BatchModelingBot implements IModelingBot {
 
 	public void cancel(Processing processing) {
 		if (processing instanceof Wizard) {
-			int numberOfActionsToCancel = EEFModelingBotHelper.getNumberOfActionToUndo(processing);
+			int numberOfActionsToCancel = EEFModelingBotHelper.getNumberOfActionToCancel(processing);
 			for (int i = 0; i < numberOfActionsToCancel; i++) {
 				editingDomain.getCommandStack().undo();
-				;
 			}
 		} else {
 			editingDomain.getCommandStack().undo();

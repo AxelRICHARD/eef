@@ -359,14 +359,15 @@ public class SWTEEFBot extends SWTWorkbenchBot implements IModelingBot {
 		container = getEObjectFromReferenceableEObject(referenceableObjectContainer);
 		assertNotNull("No container is found to launch wizard.", container);
 		SWTBotHelper.waitAllUiEvents();
-		final SWTBotTreeItem selectNode = selectNode(editor, container);
-		assertNotNull("No element is selected in the editor", selectNode);
-		if (sequenceType.equals(SequenceType.PROPERTIES_VIEW))
-			initPropertiesViewTab(propertiesEditionElement, selectNode);
-		else
-			initTab(propertiesEditionElement);
 		assertFalse("The set action must be define in a sequence.", sequenceType == null);
-		propertiesEdition.addFeature(selectNode, propertiesEditionElement, referenceableObject, sequenceType);
+		if (sequenceType.equals(SequenceType.PROPERTIES_VIEW)) {
+			final SWTBotTreeItem selectNode = selectNode(editor, container);
+			assertNotNull("No element is selected in the editor", selectNode);
+			initPropertiesViewTab(propertiesEditionElement, selectNode);
+		} else if (sequenceType.equals(SequenceType.WIZARD)) {
+			initTab(propertiesEditionElement);
+		}
+		propertiesEdition.addFeature(null, propertiesEditionElement, referenceableObject, sequenceType);
 		SWTBotHelper.waitAllUiEvents();
 		return (EObject)EEFModelHelper.eGet(container, propertiesEditionElement.getModel());
 	}

@@ -1,6 +1,5 @@
 package org.eclipse.emf.eef.modelingBot.helper;
 
-import java.util.ArrayList;
 import java.util.Collection;
 
 import org.eclipse.emf.common.util.EList;
@@ -69,13 +68,26 @@ public class EEFModelingBotHelper {
 
 	public static int getNumberOfActionToUndo(Processing processing) {
 		EList<EObject> eContents = processing.eContents();
-		Collection<EObject> eContentsAction = new ArrayList<EObject>();
+		int actionstoUndo = 0;
 		for (EObject eObject : eContents) {
 			if (eObject instanceof EditAction && !(eObject instanceof Cancel)) {
-				eContentsAction.add(eObject);
+				actionstoUndo++;
+			} else if (eObject instanceof Wizard) {
+				actionstoUndo += getNumberOfActionToUndo((Processing) eObject);
 			}
 		}
-		return eContentsAction.size();
+		return actionstoUndo;
+	}
+	
+	public static int getNumberOfActionToCancel(Processing processing) {
+		EList<EObject> eContents = processing.eContents();
+		int actionstoCancel = 0;
+		for (EObject eObject : eContents) {
+			if (eObject instanceof EditAction && !(eObject instanceof Cancel)) {
+				actionstoCancel++;
+			}
+		}
+		return actionstoCancel;
 	}
 
 }
