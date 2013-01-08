@@ -73,7 +73,6 @@ import org.eclipse.emf.eef.tests.nonreg.wizard.WizardMBotCancelSetReferenceFlatR
 import org.eclipse.emf.eef.tests.nonreg.wizard.WizardMBotCancelSetReferenceRefTable;
 import org.eclipse.emf.eef.tests.nonreg.wizard.WizardMBotEditSetReferenceAEOFCV;
 import org.eclipse.emf.eef.tests.nonreg.wizard.WizardMBotEditSetReferenceFlatRefTable;
-import org.eclipse.emf.eef.tests.nonreg.wizard.WizardMBotEditSetReferenceRefTable;
 import org.eclipse.emf.eef.tests.nonreg.wizard.WizardMBotRedoAddTableComposition;
 import org.eclipse.emf.eef.tests.nonreg.wizard.WizardMBotRedoSetAttributeRadio;
 import org.eclipse.emf.eef.tests.nonreg.wizard.WizardMBotRedoSetReferenceAEOFCV;
@@ -149,7 +148,6 @@ public class AllTests extends TestCase {
 		suite.addTestSuite(WizardMBotCancelSetReferenceRefTable.class);
 		suite.addTestSuite(WizardMBotEditSetReferenceAEOFCV.class);
 		suite.addTestSuite(WizardMBotEditSetReferenceFlatRefTable.class);
-		suite.addTestSuite(WizardMBotEditSetReferenceRefTable.class);
 		suite.addTestSuite(WizardMBotRedoAddTableComposition.class);
 		suite.addTestSuite(WizardMBotRedoSetAttributeRadio.class);
 		suite.addTestSuite(WizardMBotRedoSetReferenceAEOFCV.class);
