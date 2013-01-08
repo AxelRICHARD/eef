@@ -88,6 +88,7 @@ import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardM
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotCancelSetReferenceEOFCV;
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotEditSetReferenceAdvRefTable;
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotEditSetReferenceEOFCV;
+import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotRedoAddAdvanceTableComposition;
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotRedoSetAttributeCheckbox;
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotRedoSetAttributeEMFComboViewer;
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotRedoSetAttributeMVE;
@@ -103,6 +104,7 @@ import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardM
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotSetAttributeTextArea;
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotSetReferenceAdvRefTable;
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotSetReferenceEOFCV;
+import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotUndoAddAdvanceTableComposition;
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotUndoSetAttributeCheckbox;
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotUndoSetAttributeEMFComboViewer;
 import org.eclipse.emf.samples.tests.junit.modelingbot.wizard.conference.WizardMBotUndoSetAttributeMVE;
@@ -212,6 +214,7 @@ public class AllTests extends TestCase {
 		suite.addTestSuite(WizardMBotCancelSetReferenceEOFCV.class);
 		suite.addTestSuite(WizardMBotEditSetReferenceAdvRefTable.class);
 		suite.addTestSuite(WizardMBotEditSetReferenceEOFCV.class);
+		suite.addTestSuite(WizardMBotRedoAddAdvanceTableComposition.class);
 		suite.addTestSuite(WizardMBotRedoSetAttributeCheckbox.class);
 		suite.addTestSuite(WizardMBotRedoSetAttributeEMFComboViewer.class);
 		suite.addTestSuite(WizardMBotRedoSetAttributeMVE.class);
@@ -227,6 +230,7 @@ public class AllTests extends TestCase {
 		suite.addTestSuite(WizardMBotSetAttributeTextArea.class);
 		suite.addTestSuite(WizardMBotSetReferenceAdvRefTable.class);
 		suite.addTestSuite(WizardMBotSetReferenceEOFCV.class);
+		suite.addTestSuite(WizardMBotUndoAddAdvanceTableComposition.class);
 		suite.addTestSuite(WizardMBotUndoSetAttributeCheckbox.class);
 		suite.addTestSuite(WizardMBotUndoSetAttributeEMFComboViewer.class);
 		suite.addTestSuite(WizardMBotUndoSetAttributeMVE.class);

@@ -19,20 +19,22 @@
         <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference/place"/>
       </processings>
       <processings xsi:type="eef-mbot:Wizard" referenceableObject="//@sequences.0/@processings.1">
-        <processings xsi:type="eef-test_1:Add" name="site1" documentation="" referenceableObject="//@sequences.0/@processings.1">
-          <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_P9i7gJktEd6sxtwdpecy3w"/>
-          <type href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Site"/>
-          <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference/sites"/>
-        </processings>
-        <processings xsi:type="eef-test_1:SetAttribute" name="name" referenceableObject="//@sequences.0/@processings.3/@processings.2/@processings.0">
-          <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBPJkmEd6sxtwdpecy3w"/>
-          <values>site name</values>
-          <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Site/name"/>
-        </processings>
-        <processings xsi:type="eef-test_1:SetAttribute" name="documentation" referenceableObject="//@sequences.0/@processings.3/@processings.2/@processings.0">
-          <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBO5kmEd6sxtwdpecy3w"/>
-          <values>this is a comment</values>
-          <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Site/documentation"/>
+        <processings xsi:type="eef-mbot:Wizard">
+          <processings xsi:type="eef-test_1:Add" name="site1" documentation="" referenceableObject="//@sequences.0/@processings.1">
+            <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_P9i7gJktEd6sxtwdpecy3w"/>
+            <type href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Site"/>
+            <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference/sites"/>
+          </processings>
+          <processings xsi:type="eef-test_1:SetAttribute" name="name" referenceableObject="//@sequences.0/@processings.3/@processings.2/@processings.0/@processings.0">
+            <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBPJkmEd6sxtwdpecy3w"/>
+            <values>site name</values>
+            <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Site/name"/>
+          </processings>
+          <processings xsi:type="eef-test_1:SetAttribute" name="documentation" referenceableObject="//@sequences.0/@processings.3/@processings.2/@processings.0/@processings.0">
+            <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBO5kmEd6sxtwdpecy3w"/>
+            <values>this is a comment</values>
+            <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Site/documentation"/>
+          </processings>
         </processings>
       </processings>
       <processings xsi:type="eef-test:Save"/>
