@@ -249,6 +249,13 @@ public class PropertiesEditionHelper {
 		String label = ((ElementEditor) propertiesEditionElement.getViews()
 				.get(0)).getQualifiedIdentifier();
 		bot.browseButtonFlatReferencesTable(label).click();
+		final SWTBotTable table = bot.table(1);
+		int rowCount = table.rowCount();
+		for (int i = 0; i < rowCount; i++) {
+			SWTBotButton buttonRemove = bot.button(1);
+			buttonRemove.click();
+			SWTBotHelper.waitAllUiEvents();
+		}
 		bot.selectInActiveTable(values);
 		SWTBotButton buttonAdd = bot.button(0);
 		buttonAdd.click();
