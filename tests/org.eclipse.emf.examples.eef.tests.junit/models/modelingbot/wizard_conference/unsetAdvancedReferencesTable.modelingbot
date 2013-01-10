@@ -17,19 +17,16 @@
         <values>my first name</values>
         <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Person/firstname"/>
       </processings>
-      <processings xsi:type="eef-test:Save" name="save 1"/>
-    </processings>
-    <processings xsi:type="eef-mbot:DetailsPage">
       <processings xsi:type="eef-test_1:Add" name="talk1" referenceableObject="//@sequences.0/@processings.1">
         <type href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Talk"/>
         <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference/talks"/>
       </processings>
-      <processings xsi:type="eef-test_1:SetAttribute" name="title" referenceableObject="//@sequences.0/@processings.4/@processings.0">
+      <processings xsi:type="eef-test_1:SetAttribute" name="title" referenceableObject="//@sequences.0/@processings.3/@processings.2">
         <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBMJkmEd6sxtwdpecy3w"/>
         <values>talk1</values>
         <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Talk/title"/>
       </processings>
-      <processings xsi:type="eef-test_1:SetReference" name="assists" referenceableObject="//@sequences.0/@processings.3/@processings.0" values="//@sequences.0/@processings.4/@processings.0">
+      <processings xsi:type="eef-test_1:SetReference" name="assists" referenceableObject="//@sequences.0/@processings.3/@processings.0" values="//@sequences.0/@processings.3/@processings.2">
         <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBLJkmEd6sxtwdpecy3w"/>
         <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Person/assists"/>
       </processings>
