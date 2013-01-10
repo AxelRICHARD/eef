@@ -26,11 +26,9 @@
         <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg.edit/models/eefnr.components#_Fx_LLQwvEd-uP4lw9e0IMw"/>
         <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//ReferencesTableSample/referencestableRequiredProperty"/>
       </processings>
-      <processings xsi:type="eef-mbot:Wizard" referenceableObject="//@sequences.0/@processings.5/@processings.0">
-        <processings xsi:type="eef-test_1:SetReference" name="required property" referenceableObject="//@sequences.0/@processings.5/@processings.0" values="//@sequences.0/@processings.5/@processings.2">
-          <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg.edit/models/eefnr.components#_Fx_LLQwvEd-uP4lw9e0IMw"/>
-          <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//ReferencesTableSample/referencestableRequiredProperty"/>
-        </processings>
+      <processings xsi:type="eef-test_1:SetReference" name="required property" referenceableObject="//@sequences.0/@processings.5/@processings.0" values="//@sequences.0/@processings.5/@processings.2">
+        <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg.edit/models/eefnr.components#_Fx_LLQwvEd-uP4lw9e0IMw"/>
+        <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//ReferencesTableSample/referencestableRequiredProperty"/>
       </processings>
       <processings xsi:type="eef-test:Save"/>
     </processings>

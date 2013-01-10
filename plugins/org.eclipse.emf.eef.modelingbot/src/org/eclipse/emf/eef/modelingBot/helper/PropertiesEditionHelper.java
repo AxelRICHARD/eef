@@ -208,6 +208,14 @@ public class PropertiesEditionHelper {
 		SWTBotHelper.waitAllUiEvents();
 		String label = ((ElementEditor) propertiesEditionElement.getViews()
 				.get(0)).getQualifiedIdentifier();
+		//Clean all elements that have been already set
+		SWTBotTable table = bot.tableWithId(org.eclipse.emf.eef.runtime.ui.UIConstants.EEF_WIDGET_ID_KEY, label);
+		int rowCount = table.rowCount();
+		for (int i = 0; i < rowCount; i++) {
+			table.select(i);
+			bot.removeButtonReferencesTable(label).click();
+			SWTBotHelper.waitAllUiEvents();
+		}
 		bot.addButtonReferencesTable(label).click();
 		bot.selectInActiveTable(values);
 		clickOkOrCancel(propertiesEditionElement);
