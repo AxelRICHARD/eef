@@ -10,22 +10,20 @@
     <processings xsi:type="eef-test:OpenEditor" name="moveTableCompo" editorName="moveTableCompo/moveTableCompo.eefnr"/>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-mbot:PropertiesView">
-      <processings xsi:type="eef-mbot:Wizard">
-        <processings xsi:type="eef-test_1:Add" name="sample of type Radio" referenceableObject="//@sequences.0/@processings.1">
-          <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg.edit/models/eefnr.components#_Fx_LAwwvEd-uP4lw9e0IMw"/>
-          <type href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//RadioSample"/>
-          <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//Root/samples"/>
-        </processings>
+      <processings xsi:type="eef-test_1:Add" name="sample of type Radio" referenceableObject="//@sequences.0/@processings.1">
+        <type href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//RadioSample"/>
+        <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//Root/samples"/>
       </processings>
-      <processings xsi:type="eef-mbot:Wizard">
-        <processings xsi:type="eef-test_1:Add" name="sample of type Radio 2" referenceableObject="//@sequences.0/@processings.1">
-          <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg.edit/models/eefnr.components#_Fx_LAwwvEd-uP4lw9e0IMw"/>
-          <type href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//RadioSample"/>
-          <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//Root/samples"/>
-        </processings>
+      <processings xsi:type="eef-test_1:Add" name="sample of type Radio 2" referenceableObject="//@sequences.0/@processings.1">
+        <type href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//RadioSample"/>
+        <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg/model/eefnr.ecore#//Root/samples"/>
       </processings>
-      <processings xsi:type="eef-test_1:MoveUp" name="" referenceableObject="//@sequences.0/@processings.5/@processings.1/@processings.0"/>
-      <processings xsi:type="eef-test_1:MoveDown" referenceableObject="//@sequences.0/@processings.5/@processings.1/@processings.0"/>
+      <processings xsi:type="eef-test_1:MoveUp" name="" referenceableObject="//@sequences.0/@processings.5/@processings.1">
+        <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg.edit/models/eefnr.components#_Fx_LAwwvEd-uP4lw9e0IMw"/>
+      </processings>
+      <processings xsi:type="eef-test_1:MoveDown" referenceableObject="//@sequences.0/@processings.5/@processings.1">
+        <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.eef.tests.nonreg.edit/models/eefnr.components#_Fx_LAwwvEd-uP4lw9e0IMw"/>
+      </processings>
       <processings xsi:type="eef-test:Save"/>
     </processings>
     <processings xsi:type="eef-test_1:Check"/>

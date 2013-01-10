@@ -1383,8 +1383,11 @@ public class SWTEEFBot extends SWTWorkbenchBot implements IModelingBot {
 		assertNotNull(referenceableObject);
 		EObject eObject = getEObjectFromReferenceableEObject(referenceableObject);
 		assertNotNull(eObject);
-		selectInActiveTable(eObject);
-		buttonWithTooltip(UIConstants.UP_BUTTON).click();
+		SWTBotHelper.waitAllUiEvents();
+		String label = ((ElementEditor) propertiesEditionElement.getViews()
+				.get(0)).getQualifiedIdentifier();
+		selectInTableWithId(org.eclipse.emf.eef.runtime.ui.UIConstants.EEF_WIDGET_ID_KEY, label, eObject);
+		button(UIConstants.UP_BUTTON).click();
 	}
 
 	public void moveDown(PropertiesEditionElement propertiesEditionElement,
@@ -1392,8 +1395,10 @@ public class SWTEEFBot extends SWTWorkbenchBot implements IModelingBot {
 		assertNotNull(referenceableObject);
 		EObject eObject = getEObjectFromReferenceableEObject(referenceableObject);
 		assertNotNull(eObject);
-		selectInActiveTable(eObject);
-		buttonWithTooltip(UIConstants.DOWN_BUTTON).click();
+		String label = ((ElementEditor) propertiesEditionElement.getViews()
+				.get(0)).getQualifiedIdentifier();
+		selectInTableWithId(org.eclipse.emf.eef.runtime.ui.UIConstants.EEF_WIDGET_ID_KEY, label, eObject);
+		button(UIConstants.DOWN_BUTTON).click();
 	}
 
 	
