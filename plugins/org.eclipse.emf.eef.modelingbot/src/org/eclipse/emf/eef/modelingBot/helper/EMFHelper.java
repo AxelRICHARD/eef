@@ -115,7 +115,7 @@ public class EMFHelper {
 	public static String getEditorLabel(PropertiesEditionElement propertiesEditionElement, EObject referenceableObject, EObject container, SequenceType sequenceType) {
 		AdapterFactory adapterFactory = EEFRuntimePlugin.getDefault().getAdapterFactory();
 		EObject target = null;
-		if (SequenceType.DETAILS_PAGE == sequenceType) {
+		if (SequenceType.DETAILS_PAGE == sequenceType || SequenceType.PROPERTIES_VIEW == sequenceType) {
 			target = container;
 		} else if (SequenceType.WIZARD == sequenceType) {
 			if (((EditAction)referenceableObject).getPropertiesEditionElement() != null) {
@@ -124,8 +124,6 @@ public class EMFHelper {
 				target = container;
 				
 			}
-		}else if (SequenceType.PROPERTIES_VIEW == sequenceType) {
-			target = container;
 		}
 		assertFalse(target == null);
 		EStructuralFeature model = EMFHelper.map(target.eClass().getEPackage(), propertiesEditionElement.getModel());

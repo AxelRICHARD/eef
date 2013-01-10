@@ -6,8 +6,8 @@
     <processings xsi:type="eef-test:CreateModel" name="conference" documentation="" modelName="unsetTextArea.conference" path="unsetTextArea">
       <root href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference"/>
     </processings>
-    <processings xsi:type="eef-test:CloseEditor" name="unsetTextArea.conference" documentation="" path="unsetTextArea"/>
-    <processings xsi:type="eef-test:OpenEditor" name="unsetTextArea" editorName="unsetTextArea/unsetTextArea.conference"/>
+    <processings xsi:type="eef-test:CloseEditor" name="unsetTextArea.conference" path="unsetTextArea"/>
+    <processings xsi:type="eef-test:OpenEditor" name="unsetTextArea" documentation="" editorName="unsetTextArea/unsetTextArea.conference"/>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-mbot:PropertiesView">
       <processings xsi:type="eef-test_1:Add" name="topic1" referenceableObject="//@sequences.0/@processings.1">

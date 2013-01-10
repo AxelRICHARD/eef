@@ -6,8 +6,8 @@
     <processings xsi:type="eef-test:CreateModel" name="conference" documentation="" modelName="undoSetAttributeCheckbox.conference" path="undoSetAttributeCheckbox">
       <root href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference"/>
     </processings>
-    <processings xsi:type="eef-test:CloseEditor" name="undoSetAttributeCheckbox.conference" documentation="" path="undoSetAttributeCheckbox"/>
-    <processings xsi:type="eef-test:OpenEditor" name="undoSetAttributeCheckbox" editorName="undoSetAttributeCheckbox/undoSetAttributeCheckbox.conference"/>
+    <processings xsi:type="eef-test:CloseEditor" name="undoSetAttributeCheckbox.conference" path="undoSetAttributeCheckbox"/>
+    <processings xsi:type="eef-test:OpenEditor" name="undoSetAttributeCheckbox" documentation="" editorName="undoSetAttributeCheckbox/undoSetAttributeCheckbox.conference"/>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-mbot:PropertiesView">
       <processings xsi:type="eef-test_1:Add" name="participant1" documentation="" referenceableObject="//@sequences.0/@processings.1">

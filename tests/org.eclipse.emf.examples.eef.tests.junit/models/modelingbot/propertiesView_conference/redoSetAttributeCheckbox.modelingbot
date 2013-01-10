@@ -7,17 +7,17 @@
       <root href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference"/>
     </processings>
     <processings xsi:type="eef-test:CloseEditor" name="redoSetAttributeCheckbox.conference" path="redoSetAttributeCheckbox"/>
-    <processings xsi:type="eef-test:OpenEditor" name="redoSetAttributeCheckbox" editorName="redoSetAttributeCheckbox/redoSetAttributeCheckbox.conference"/>
+    <processings xsi:type="eef-test:OpenEditor" name="redoSetAttributeCheckbox" documentation="" editorName="redoSetAttributeCheckbox/redoSetAttributeCheckbox.conference"/>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-mbot:PropertiesView">
       <processings xsi:type="eef-test_1:Add" name="participant1" documentation="" referenceableObject="//@sequences.0/@processings.1">
         <type href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Person"/>
         <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference/participants"/>
       </processings>
-      <processings xsi:type="eef-test_1:SetAttribute" name="isCommiter" referenceableObject="//@sequences.0/@processings.5/@processings.0">
-        <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBK5kmEd6sxtwdpecy3w"/>
+      <processings xsi:type="eef-test_1:SetAttribute" name="isRegistered" referenceableObject="//@sequences.0/@processings.5/@processings.0">
+        <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBLpkmEd6sxtwdpecy3w"/>
         <values>true</values>
-        <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Person/eclipseCommiter"/>
+        <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Person/isRegistered"/>
       </processings>
       <processings xsi:type="eef-test:Undo" name="isRegistered"/>
       <processings xsi:type="eef-test:Save"/>

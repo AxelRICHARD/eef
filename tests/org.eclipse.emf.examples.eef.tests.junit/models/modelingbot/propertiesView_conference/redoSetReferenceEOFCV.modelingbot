@@ -6,8 +6,8 @@
     <processings xsi:type="eef-test:CreateModel" name="conference" documentation="" modelName="redoSetReferenceEOFCV.conference" path="redoSetReferenceEOFCV">
       <root href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference"/>
     </processings>
-    <processings xsi:type="eef-test:CloseEditor" name="redoSetReferenceEOFCV.conference" documentation="" path="redoSetReferenceEOFCV"/>
-    <processings xsi:type="eef-test:OpenEditor" name="redoSetReferenceEOFCV" editorName="redoSetReferenceEOFCV/redoSetReferenceEOFCV.conference"/>
+    <processings xsi:type="eef-test:CloseEditor" name="redoSetReferenceEOFCV.conference" path="redoSetReferenceEOFCV"/>
+    <processings xsi:type="eef-test:OpenEditor" name="redoSetReferenceEOFCV" documentation="" editorName="redoSetReferenceEOFCV/redoSetReferenceEOFCV.conference"/>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-mbot:PropertiesView">
       <processings xsi:type="eef-test_1:Add" name="topic1" documentation="" referenceableObject="//@sequences.0/@processings.1">

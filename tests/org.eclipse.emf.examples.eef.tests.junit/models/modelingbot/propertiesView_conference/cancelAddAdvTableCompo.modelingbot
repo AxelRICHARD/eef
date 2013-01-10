@@ -6,8 +6,8 @@
     <processings xsi:type="eef-test:CreateModel" name="conference" documentation="" modelName="cancelAddAdvTableCompo.conference" path="cancelAddAdvTableCompo">
       <root href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference"/>
     </processings>
-    <processings xsi:type="eef-test:CloseEditor" name="cancelAddAdvTableCompo.conference" documentation="" path="cancelAddAdvTableCompo"/>
-    <processings xsi:type="eef-test:OpenEditor" name="cancelAddAdvTableCompo.conference" editorName="cancelAddAdvTableCompo/cancelAddAdvTableCompo.conference"/>
+    <processings xsi:type="eef-test:CloseEditor" name="cancelAddAdvTableCompo.conference" path="cancelAddAdvTableCompo"/>
+    <processings xsi:type="eef-test:OpenEditor" name="cancelAddAdvTableCompo" documentation="" editorName="cancelAddAdvTableCompo/cancelAddAdvTableCompo.conference"/>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-mbot:PropertiesView">
       <processings xsi:type="eef-test_1:Add" name="site1" documentation="" referenceableObject="//@sequences.0/@processings.1">

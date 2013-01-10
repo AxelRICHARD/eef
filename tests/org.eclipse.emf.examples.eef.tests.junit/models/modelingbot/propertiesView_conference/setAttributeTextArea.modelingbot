@@ -7,7 +7,7 @@
       <root href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference"/>
     </processings>
     <processings xsi:type="eef-test:CloseEditor" name="setAttributeTextArea.conference" path="setAttributeTextArea"/>
-    <processings xsi:type="eef-test:OpenEditor" name="setAttributeTextArea" editorName="setAttributeTextArea/setAttributeTextArea.conference"/>
+    <processings xsi:type="eef-test:OpenEditor" name="setAttributeTextArea" documentation="" editorName="setAttributeTextArea/setAttributeTextArea.conference"/>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-mbot:PropertiesView">
       <processings xsi:type="eef-test_1:Add" name="topic1" referenceableObject="//@sequences.0/@processings.1">

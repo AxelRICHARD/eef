@@ -6,8 +6,8 @@
     <processings xsi:type="eef-test:CreateModel" name="conference" documentation="" modelName="setReferenceAdvRefTable.conference" path="setReferenceAdvRefTable">
       <root href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference"/>
     </processings>
-    <processings xsi:type="eef-test:CloseEditor" name="setReferenceAdvRefTable/setReferenceAdvRefTable.conference" path="setReferenceAdvRefTable"/>
-    <processings xsi:type="eef-test:OpenEditor" name="setReferenceAdvRefTable" editorName="setReferenceAdvRefTable/setReferenceAdvRefTable.conference"/>
+    <processings xsi:type="eef-test:CloseEditor" name="setReferenceAdvRefTable.conference" path="setReferenceAdvRefTable"/>
+    <processings xsi:type="eef-test:OpenEditor" name="setReferenceAdvRefTable" documentation="" editorName="setReferenceAdvRefTable/setReferenceAdvRefTable.conference"/>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-mbot:PropertiesView">
       <processings xsi:type="eef-test_1:Add" name="participant1" documentation="" referenceableObject="//@sequences.0/@processings.1">

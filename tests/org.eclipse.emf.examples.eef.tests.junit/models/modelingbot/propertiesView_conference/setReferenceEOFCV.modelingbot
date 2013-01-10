@@ -7,7 +7,7 @@
       <root href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference"/>
     </processings>
     <processings xsi:type="eef-test:CloseEditor" name="setReferenceEOFCV.conference" path="setReferenceEOFCV"/>
-    <processings xsi:type="eef-test:OpenEditor" name="setReferenceEOFCV" editorName="setReferenceEOFCV/setReferenceEOFCV.conference"/>
+    <processings xsi:type="eef-test:OpenEditor" name="setReferenceEOFCV" documentation="" editorName="setReferenceEOFCV/setReferenceEOFCV.conference"/>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-mbot:PropertiesView">
       <processings xsi:type="eef-test_1:Add" name="topic1" documentation="" referenceableObject="//@sequences.0/@processings.1">

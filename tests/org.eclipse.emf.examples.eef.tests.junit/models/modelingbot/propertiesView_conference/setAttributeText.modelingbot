@@ -7,14 +7,14 @@
       <root href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference"/>
     </processings>
     <processings xsi:type="eef-test:CloseEditor" name="setAttributeText.conference" path="setAttributeText"/>
-    <processings xsi:type="eef-test:OpenEditor" name="setAttributeText" editorName="setAttributeText/setAttributeText.conference"/>
+    <processings xsi:type="eef-test:OpenEditor" name="setAttributeText" documentation="" editorName="setAttributeText/setAttributeText.conference"/>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-mbot:PropertiesView">
       <processings xsi:type="eef-test_1:Add" name="participant1" documentation="" referenceableObject="//@sequences.0/@processings.1">
         <type href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Person"/>
         <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference/participants"/>
       </processings>
-      <processings xsi:type="eef-test_1:SetAttribute" name="first name" documentation="" referenceableObject="//@sequences.0/@processings.5/@processings.0">
+      <processings xsi:type="eef-test_1:SetAttribute" name="first name" referenceableObject="//@sequences.0/@processings.5/@processings.0">
         <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBKJkmEd6sxtwdpecy3w"/>
         <values>my details page first name</values>
         <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Person/firstname"/>
