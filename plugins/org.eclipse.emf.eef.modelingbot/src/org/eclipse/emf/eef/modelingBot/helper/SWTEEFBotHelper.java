@@ -16,13 +16,11 @@ import static org.eclipse.swtbot.swt.finder.matchers.WidgetMatcherFactory.withId
 import static org.eclipse.swtbot.swt.finder.matchers.WidgetMatcherFactory.withMnemonic;
 import static org.eclipse.swtbot.swt.finder.matchers.WidgetMatcherFactory.withStyle;
 
-import org.eclipse.emf.eef.modelingBot.Action;
 import org.eclipse.emf.eef.runtime.ui.UIConstants;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Widget;
 import org.eclipse.swtbot.swt.finder.SWTBot;
-import org.eclipse.swtbot.swt.finder.exceptions.WidgetNotFoundException;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotButton;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotRadio;
 import org.hamcrest.Matcher;

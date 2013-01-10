@@ -226,6 +226,14 @@ public class PropertiesEditionHelper {
 		SWTBotHelper.waitAllUiEvents();
 		String label = ((ElementEditor) propertiesEditionElement.getViews()
 				.get(0)).getQualifiedIdentifier();
+		//Clean all elements that have been already set
+		SWTBotTable table = bot.tableWithId(org.eclipse.emf.eef.runtime.ui.UIConstants.EEF_WIDGET_ID_KEY, label);
+		int rowCount = table.rowCount();
+		for (int i = 0; i < rowCount; i++) {
+			table.select(i);
+			bot.removeButtonAdvancedReferencesTable(label).click();
+			SWTBotHelper.waitAllUiEvents();
+		}
 		// TODO manage this case with selectInActiveTree(Collection<EObject>)
 		// when EEF will allowed to select multiple elements in a tree
 		for (EObject value : values) {
@@ -249,6 +257,8 @@ public class PropertiesEditionHelper {
 		String label = ((ElementEditor) propertiesEditionElement.getViews()
 				.get(0)).getQualifiedIdentifier();
 		bot.browseButtonFlatReferencesTable(label).click();
+		
+		//Clean all elements that have been already set
 		final SWTBotTable table = bot.table(1);
 		int rowCount = table.rowCount();
 		for (int i = 0; i < rowCount; i++) {
@@ -256,6 +266,7 @@ public class PropertiesEditionHelper {
 			buttonRemove.click();
 			SWTBotHelper.waitAllUiEvents();
 		}
+		
 		bot.selectInActiveTable(values);
 		SWTBotButton buttonAdd = bot.button(0);
 		buttonAdd.click();
