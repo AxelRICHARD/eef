@@ -12,6 +12,11 @@
         <type href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Topic"/>
         <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference/topics"/>
       </processings>
+      <processings xsi:type="eef-test_1:SetAttribute" name="documentation" referenceableObject="//@sequences.0/@processings.3/@processings.0">
+        <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBOZkmEd6sxtwdpecy3w"/>
+        <values>just for enable the finish button</values>
+        <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Topic/documentation"/>
+      </processings>
       <processings xsi:type="eef-mbot:Wizard" referenceableObject="//@sequences.0/@processings.3/@processings.0">
         <processings xsi:type="eef-test_1:SetAttribute" name="references" referenceableObject="//@sequences.0/@processings.3/@processings.0">
           <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBOJkmEd6sxtwdpecy3w"/>
@@ -19,12 +24,7 @@
           <values>myREf2</values>
           <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Topic/references"/>
         </processings>
-        <processings xsi:type="eef-test_1:SetAttribute" name="documentation" referenceableObject="//@sequences.0/@processings.3/@processings.0">
-          <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBOZkmEd6sxtwdpecy3w"/>
-          <values>just for enable the finish button</values>
-          <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Topic/documentation"/>
-        </processings>
-        <processings xsi:type="eef-test_1:Cancel"/>
+        <processings xsi:type="eef-test_1:Cancel" name="set attribute references" processing="//@sequences.0/@processings.3/@processings.2/@processings.0"/>
       </processings>
       <processings xsi:type="eef-test:Save"/>
     </processings>
