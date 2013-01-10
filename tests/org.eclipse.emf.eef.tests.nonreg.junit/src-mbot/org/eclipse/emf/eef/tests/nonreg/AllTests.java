@@ -126,7 +126,6 @@ public class AllTests extends TestCase {
 		suite.addTestSuite(PViewMBotUndoAddTableComposition.class);
 		suite.addTestSuite(PViewMBotUndoSetAttributeRadio.class);
 		suite.addTestSuite(PViewMBotUndoSetReferenceAEOFCV.class);
-		suite.addTestSuite(PViewMBotUndoSetReferenceCombo.class);
 		suite.addTestSuite(PViewMBotUndoSetReferenceFlatRefTable.class);
 		suite.addTestSuite(PViewMBotUndoSetReferenceRefTable.class);
 		suite.addTestSuite(PViewMBotUnsetAEOFCV.class);
