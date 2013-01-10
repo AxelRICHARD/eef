@@ -10,11 +10,11 @@
  *     Obeo - initial API and implementation
  *******************************************************************************
  /]
-[module umlComponentUtils('http://www.eclipse.org/emf/eef/views/1.0.0', 'http://www.eclipse.org/emf/eef/components/1.0.0', 'http://www.eclipse.org/emf/2002/Ecore') extends checkboxControl/]
+[module umlComponentUtils('http://www.eclipse.org/emf/eef/views/1.0.0', 'http://www.eclipse.org/emf/eef/components/1.0.0', 'http://www.eclipse.org/emf/2002/Ecore') extends org::eclipse::emf::eef::codegen::widgets::impl::checkbox::checkboxControl/]
 
-[import common /]
-[import naming /]
-[import typeUtils /]
+[import org::eclipse::emf::eef::codegen::services::common /]
+[import org::eclipse::emf::eef::codegen::services::naming /]
+[import org::eclipse::emf::eef::codegen::services::typeUtils /]
 
 [template public updater(editionElement : PropertiesEditionElement, view : View, pec : PropertiesEditionComponent) overrides updater ? (editionElement.model.isAttributeSingle() and editionElement.representationName('Checkbox'))]
 [if (editionElement.model.oclAsType("EAttribute").eType.instanceClassName = 'boolean')]
