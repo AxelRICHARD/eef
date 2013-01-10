@@ -55,7 +55,6 @@ import org.eclipse.emf.eef.tests.nonreg.propertiesView.PViewMBotSetReferenceRefT
 import org.eclipse.emf.eef.tests.nonreg.propertiesView.PViewMBotUndoAddTableComposition;
 import org.eclipse.emf.eef.tests.nonreg.propertiesView.PViewMBotUndoSetAttributeRadio;
 import org.eclipse.emf.eef.tests.nonreg.propertiesView.PViewMBotUndoSetReferenceAEOFCV;
-import org.eclipse.emf.eef.tests.nonreg.propertiesView.PViewMBotUndoSetReferenceCombo;
 import org.eclipse.emf.eef.tests.nonreg.propertiesView.PViewMBotUndoSetReferenceFlatRefTable;
 import org.eclipse.emf.eef.tests.nonreg.propertiesView.PViewMBotUndoSetReferenceRefTable;
 import org.eclipse.emf.eef.tests.nonreg.propertiesView.PViewMBotUnsetAEOFCV;
