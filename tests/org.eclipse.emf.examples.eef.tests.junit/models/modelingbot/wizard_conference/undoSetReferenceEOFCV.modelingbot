@@ -18,7 +18,6 @@
         <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Topic/description"/>
       </processings>
       <processings xsi:type="eef-test_1:Add" name="presenter1" referenceableObject="//@sequences.0/@processings.1">
-        <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_-S1ZMBi5EeCOk6BuQTSdWA"/>
         <type href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Person"/>
         <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference/participants"/>
       </processings>
@@ -27,29 +26,26 @@
         <values>just for enable the finish button</values>
         <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Person/firstname"/>
       </processings>
-      <processings xsi:type="eef-test:Save"/>
-    </processings>
-    <processings xsi:type="eef-mbot:DetailsPage">
       <processings xsi:type="eef-test_1:Add" name="talk1" referenceableObject="//@sequences.0/@processings.1">
         <type href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Talk"/>
         <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Conference/talks"/>
       </processings>
-      <processings xsi:type="eef-mbot:Wizard" referenceableObject="//@sequences.0/@processings.4/@processings.0">
-        <processings xsi:type="eef-test_1:SetReference" name="topic" referenceableObject="//@sequences.0/@processings.4/@processings.0" values="//@sequences.0/@processings.3/@processings.0">
-          <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBMZkmEd6sxtwdpecy3w"/>
-          <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Talk/topic"/>
-        </processings>
-        <processings xsi:type="eef-test_1:SetAttribute" name="title" referenceableObject="//@sequences.0/@processings.4/@processings.0">
-          <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBMJkmEd6sxtwdpecy3w"/>
-          <values>just for enable the finish button</values>
-          <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Talk/title"/>
-        </processings>
-        <processings xsi:type="eef-test_1:SetAttribute" name="documentation" referenceableObject="//@sequences.0/@processings.4/@processings.0">
-          <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBNZkmEd6sxtwdpecy3w"/>
-          <values>just for enable the finish button</values>
-          <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Talk/documentation"/>
-        </processings>
-        <processings xsi:type="eef-test_1:SetReference" name="presenter" referenceableObject="//@sequences.0/@processings.4/@processings.0" values="//@sequences.0/@processings.3/@processings.2">
+      <processings xsi:type="eef-test_1:SetReference" name="topic" referenceableObject="//@sequences.0/@processings.3/@processings.4" values="//@sequences.0/@processings.3/@processings.0">
+        <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBMZkmEd6sxtwdpecy3w"/>
+        <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Talk/topic"/>
+      </processings>
+      <processings xsi:type="eef-test_1:SetAttribute" name="title" referenceableObject="//@sequences.0/@processings.3/@processings.4">
+        <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBMJkmEd6sxtwdpecy3w"/>
+        <values>just for enable the finish button</values>
+        <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Talk/title"/>
+      </processings>
+      <processings xsi:type="eef-test_1:SetAttribute" name="documentation" referenceableObject="//@sequences.0/@processings.3/@processings.4">
+        <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBNZkmEd6sxtwdpecy3w"/>
+        <values>just for enable the finish button</values>
+        <eContainingFeature xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Talk/documentation"/>
+      </processings>
+      <processings xsi:type="eef-mbot:Wizard" referenceableObject="//@sequences.0/@processings.3/@processings.4">
+        <processings xsi:type="eef-test_1:SetReference" name="presenter" referenceableObject="//@sequences.0/@processings.3/@processings.4" values="//@sequences.0/@processings.3/@processings.2">
           <propertiesEditionElement href="platform:/plugin/org.eclipse.emf.examples.eef.edit/models/conference.components#_KvJBM5kmEd6sxtwdpecy3w"/>
           <eContainingFeature xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.examples.eef/model/conference.ecore#//Talk/presenter"/>
         </processings>
@@ -57,6 +53,7 @@
       <processings xsi:type="eef-test:Save"/>
       <processings xsi:type="eef-test_1:Check"/>
       <processings xsi:type="eef-test:Undo" name="set reference"/>
+      <processings xsi:type="eef-test:Save"/>
     </processings>
     <processings xsi:type="eef-test_1:Check"/>
     <processings xsi:type="eef-test:RemoveProject" name="undoSetReferenceEOFCV" projectName="undoSetReferenceEOFCV"/>
