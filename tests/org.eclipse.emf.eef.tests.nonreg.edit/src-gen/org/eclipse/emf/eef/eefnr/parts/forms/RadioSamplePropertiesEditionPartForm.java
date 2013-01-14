@@ -258,6 +258,14 @@ public class RadioSamplePropertiesEditionPartForm extends SectionPropertiesEditi
 	public void initRadioRequiredProperty(Object input, Enumerator current) {
 		radioRequiredPropertyRadioViewer.setInput(input);
 		radioRequiredPropertyRadioViewer.setSelection(new StructuredSelection(current));
+		boolean eefElementEditorReadOnlyState = isReadOnly(EefnrViewsRepository.RadioSample.Properties.radioRequiredProperty);
+		if (eefElementEditorReadOnlyState && radioRequiredPropertyRadioViewer.isEnabled()) {
+			radioRequiredPropertyRadioViewer.setEnabled(false);
+			radioRequiredPropertyRadioViewer.setToolTipText(EefnrMessages.RadioSample_ReadOnly);
+		} else if (!eefElementEditorReadOnlyState && !radioRequiredPropertyRadioViewer.isEnabled()) {
+			radioRequiredPropertyRadioViewer.setEnabled(true);
+		}
+		
 	}
 
 	/**
@@ -300,6 +308,14 @@ public class RadioSamplePropertiesEditionPartForm extends SectionPropertiesEditi
 	public void initRadioOptionalProperty(Object input, Enumerator current) {
 		radioOptionalPropertyRadioViewer.setInput(input);
 		radioOptionalPropertyRadioViewer.setSelection(new StructuredSelection(current));
+		boolean eefElementEditorReadOnlyState = isReadOnly(EefnrViewsRepository.RadioSample.Properties.radioOptionalProperty);
+		if (eefElementEditorReadOnlyState && radioOptionalPropertyRadioViewer.isEnabled()) {
+			radioOptionalPropertyRadioViewer.setEnabled(false);
+			radioOptionalPropertyRadioViewer.setToolTipText(EefnrMessages.RadioSample_ReadOnly);
+		} else if (!eefElementEditorReadOnlyState && !radioOptionalPropertyRadioViewer.isEnabled()) {
+			radioOptionalPropertyRadioViewer.setEnabled(true);
+		}
+		
 	}
 
 	/**
@@ -342,6 +358,9 @@ public class RadioSamplePropertiesEditionPartForm extends SectionPropertiesEditi
 	public void initRadioROProperty(Object input, Enumerator current) {
 		radioROPropertyRadioViewer.setInput(input);
 		radioROPropertyRadioViewer.setSelection(new StructuredSelection(current));
+		radioROPropertyRadioViewer.setEnabled(false);
+		radioROPropertyRadioViewer.setToolTipText(EefnrMessages.RadioSample_ReadOnly);
+		
 	}
 
 	/**

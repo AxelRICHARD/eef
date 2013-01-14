@@ -86,6 +86,7 @@
 [elementEditor.initSignature()/] {
 		[elementEditor.elementEditorName()/]RadioViewer.setInput(input);
 		[elementEditor.elementEditorName()/]RadioViewer.setSelection(new [include('org.eclipse.jface.viewers.StructuredSelection')/](current));
+		[elementEditor.readOnly()/]
 	}
 [/template]
 

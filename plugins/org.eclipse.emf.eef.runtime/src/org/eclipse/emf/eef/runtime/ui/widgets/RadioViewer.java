@@ -60,6 +60,16 @@ public class RadioViewer extends Composite implements ISelectionProvider {
 		EditingUtils.setEEFtype(this, "eef::RadioViewer");
 		radioSelectionChangedListener = new RadioSelectionChangedListener();
 	}
+	
+	/**
+	 * Clear all the graphical elements of the view
+	 */
+	private void clear() {
+		while (this.getChildren().length > 0) {
+			Control next = this.getChildren()[0];
+			next.dispose();
+		}
+	}
 
 	private void createButton(Object value) {
 		Button b = new Button(this, SWT.RADIO);
@@ -120,6 +130,7 @@ public class RadioViewer extends Composite implements ISelectionProvider {
 	}
 
 	public void setInput(Object input) {
+		clear();
 		if (input instanceof Collection) {
 			for (Object value : (Collection<?>)input) {
 				createButton(value);
